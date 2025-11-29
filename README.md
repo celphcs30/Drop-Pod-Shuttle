@@ -4,14 +4,14 @@ A RimWorld mod that adds a craftable drop pod shuttle for transporting Space Mar
 
 ## Features
 
-- **Craftable drop pod shuttle** (3x3 size)
+- **Craftable drop pod shuttle** (4x4 size)
 - **Transports up to 10 Space Marines** (3000kg capacity)
 - **Vertical-only movement** (drop pod style, not shuttle flight)
 - **Chemfuel-powered** (900 capacity, 5 per tile, 60 minimum)
 - **1.5 hour cooldown** between launches
 - **Paintable** to match your chapter colors
 - **Closed state during flight**, open state when landed
-- **Explosion on landing** matching original drop pods
+- **Large explosion on landing** (5 tile radius)
 
 ## Requirements
 

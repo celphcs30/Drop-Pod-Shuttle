@@ -8,18 +8,18 @@
     <defName>BEWH_DropPodShuttleIncoming</defName>
     <label>drop pod shuttle (incoming)</label>
     <thingClass>PassengerShuttleIncoming</thingClass>
-    <size>(3, 3)</size>
+    <size>(4, 4)</size>
     <graphicData>
       <texPath>Things/Building/DropPod/BEWH_DropPod_Closed</texPath>
       <maskPath>Things/Building/DropPod/BEWH_DropPod_Closed_m</maskPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
-      <drawSize>(6, 6)</drawSize>
+      <drawSize>(8, 8)</drawSize>
     </graphicData>
     <skyfaller>
       <movementType>Decelerate</movementType>
       <shadow>Things/Skyfaller/SkyfallerShadowDropPod</shadow>
-      <shadowSize>(3, 3)</shadowSize>
+      <shadowSize>(4, 4)</shadowSize>
       <anticipationSound>DropPod_Fall</anticipationSound>
       <anticipationSoundTicks>100</anticipationSoundTicks>
       <impactSound>DropPod_Impact</impactSound>
@@ -52,8 +52,8 @@
           <li>(0.95,0.1)</li>
         </points>
       </speedCurve>
-      <!-- Match original drop pod explosion for visual effect -->
-      <explosionRadius>2</explosionRadius>
+      <!-- Larger explosion for bigger drop pod -->
+      <explosionRadius>5</explosionRadius>
       <explosionDamage>Bomb</explosionDamage>
       <explosionDamageFactor>0.5</explosionDamageFactor>
       <!-- NO spawnThing = PassengerShuttleIncoming handles building spawn -->
@@ -73,19 +73,19 @@
     <label>drop pod shuttle (leaving)</label>
     <thingClass>PassengerShuttleLeaving</thingClass>
     <rotatable>true</rotatable>
-    <size>(3, 3)</size>
+    <size>(4, 4)</size>
     <graphicData>
       <texPath>Things/Building/DropPod/BEWH_DropPod_Closed</texPath>
       <maskPath>Things/Building/DropPod/BEWH_DropPod_Closed_m</maskPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
-      <drawSize>(6, 6)</drawSize>
+      <drawSize>(8, 8)</drawSize>
     </graphicData>
     <skyfaller>
       <reversed>true</reversed>
       <movementType>Decelerate</movementType>
       <shadow>Things/Skyfaller/SkyfallerShadowDropPod</shadow>
-      <shadowSize>(3, 3)</shadowSize>
+      <shadowSize>(4, 4)</shadowSize>
       <anticipationSound>DropPod_Leaving</anticipationSound>
       <anticipationSoundTicks>-10</anticipationSoundTicks>
       <ticksToImpactRange>-40~-15</ticksToImpactRange>

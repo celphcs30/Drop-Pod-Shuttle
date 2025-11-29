@@ -12,7 +12,7 @@
     <blockWind>true</blockWind>
     <passability>PassThroughOnly</passability>
     <fillPercent>0.8</fillPercent>
-    <size>(3,3)</size>
+    <size>(4,4)</size>
     <drawHighlight>true</drawHighlight>
     <highlightColor>(0.56, 0.62, 0.9)</highlightColor>
     <uiIconScale>1</uiIconScale>
@@ -21,9 +21,9 @@
       <texPath>Things/Building/DropPod/BEWH_DropPod</texPath>
       <maskPath>Things/Building/DropPod/BEWH_DropPod_m</maskPath>
       <shaderType>CutoutComplex</shaderType>
-      <drawSize>(6,6)</drawSize>
+      <drawSize>(8,8)</drawSize>
       <shadowData>
-        <volume>(0.27,0.25,0.27)</volume>
+        <volume>(0.36,0.33,0.36)</volume>
         <offset>(0,0,0)</offset>
       </shadowData>
     </graphicData>
@@ -32,7 +32,7 @@
       <MaxHitPoints>5000</MaxHitPoints>
       <Flammability>0</Flammability>
       <WorkToBuild>36000</WorkToBuild>
-      <Mass>512</Mass>
+      <Mass>683</Mass>
       <Comfort>0.65</Comfort>
     </statBases>
     <tickerType>Normal</tickerType>
@@ -53,7 +53,7 @@
     </killedLeavings>
     <rotatable>true</rotatable>
     <hasInteractionCell>true</hasInteractionCell>
-    <interactionCellOffset>(2, 0, 0)</interactionCellOffset>
+    <interactionCellOffset>(3, 0, 0)</interactionCellOffset>
     <defaultPlacingRot>East</defaultPlacingRot>
     <selectable>true</selectable>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
