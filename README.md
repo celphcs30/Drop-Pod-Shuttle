@@ -1,17 +1,24 @@
 # Drop Pod Shuttle
 
-A RimWorld mod that adds a craftable drop pod shuttle for transporting Space Marines. The drop pod uses vertical-only movement (straight down landing, straight up takeoff) just like traditional drop pods, not horizontal flight like shuttles.
+A RimWorld mod that adds a craftable drop pod shuttle for transporting Space Marines. Uses drop pod graphics and sounds, but flies horizontally like shuttles (limitation of using shuttle mechanics).
 
 ## Features
 
 - **Craftable drop pod shuttle** (4x4 size)
 - **Transports up to 10 Space Marines** (3000kg capacity)
-- **Vertical-only movement** (drop pod style, not shuttle flight)
 - **Chemfuel-powered** (900 capacity, 5 per tile, 60 minimum)
 - **1.5 hour cooldown** between launches
 - **Paintable** to match your chapter colors
 - **Closed state during flight**, open state when landed
 - **Large explosion on landing** (5 tile radius)
+
+## Known Limitations
+
+- **Horizontal flight path**: Uses horizontal flight (like shuttles) rather than vertical drop pod movement. This is a technical limitation of using shuttle mechanics - the flight path is calculated from world map route direction, not configurable via XML.
+
+## Compatibility
+
+- **Choose Where To Land**: Compatible - allows manual selection of landing spots for the drop pod shuttle.
 
 ## Requirements
 
@@ -43,7 +50,7 @@ A RimWorld mod that adds a craftable drop pod shuttle for transporting Space Mar
 3. Load pawns and items (up to 3000kg total)
 4. Refuel with chemfuel (900 capacity)
 5. Launch to any destination on the world map
-6. The drop pod will land vertically at the target location
+6. The drop pod will fly horizontally to the target location (like shuttles)
 
 ## Building Requirements
 
