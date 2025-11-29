@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Drop Pod Shuttle</name>
+  <packageId>celphcs30.DropPodShuttle</packageId>
+  <author>celphcs30</author>
+  <url>https://github.com/celphcs30/Drop-Pod-Shuttle</url>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>Ludeon.RimWorld.Odyssey</packageId>
+      <displayName>Odyssey</displayName>
+    </li>
+    <li>
+      <packageId>Phonicmas.RimDark.MankindsFinest</packageId>
+      <displayName>RimDark 40k - Mankinds Finest</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3505068525</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>Ludeon.RimWorld.Odyssey</li>
+    <li>Phonicmas.RimDark.MankindsFinest</li>
+  </loadAfter>
+  <description>
+    Adds a craftable drop pod shuttle that can transport up to 10 Space Marines. The drop pod uses vertical-only movement (straight down landing, straight up takeoff) just like traditional drop pods, not horizontal flight like shuttles.
+    
+    [h1]Features[/h1]
+    [list]
+    [*] Craftable drop pod shuttle (3x3 size)
+    [*] Transports up to 10 Space Marines (3000kg capacity)
+    [*] Vertical-only movement (drop pod style, not shuttle flight)
+    [*] Requires chemfuel for travel (900 capacity, 5 per tile, 60 minimum)
+    [*] 1.5 hour cooldown between launches
+    [*] Paintable to match your chapter colors
+    [/list]
+    
+    [h1]Credits[/h1]
+    Assets (graphics, sounds, turret) from RimDark 40k - Mankinds Finest by Phonicmas, Mewn Goddess, Grim Cheese and UnfortunateДруг
+    
+    Original mod: https://steamcommunity.com/sharedfiles/filedetails/?id=3505068525
+  </description>
+</ModMetaData>
+

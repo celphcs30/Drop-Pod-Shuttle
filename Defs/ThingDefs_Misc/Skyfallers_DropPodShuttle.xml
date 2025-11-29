@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Landing Skyfaller (Vertical-Only Movement) -->
+  <!-- Uses PassengerShuttleIncoming thingClass for correct shuttle content handling -->
+  <!-- Uses SkyfallerBase parent + no curves for vertical-only movement -->
+  <ThingDef ParentName="SkyfallerBase">
+    <defName>BEWH_DropPodShuttleIncoming</defName>
+    <label>drop pod shuttle (incoming)</label>
+    <thingClass>PassengerShuttleIncoming</thingClass>
+    <size>(3, 3)</size>
+    <graphicData>
+      <texPath>Things/Building/DropPod/BEWH_DropPod_Closed</texPath>
+      <maskPath>Things/Building/DropPod/BEWH_DropPod_Closed_m</maskPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(6, 6)</drawSize>
+    </graphicData>
+    <skyfaller>
+      <movementType>Decelerate</movementType>
+      <shadow>Things/Skyfaller/SkyfallerShadowDropPod</shadow>
+      <shadowSize>(3, 3)</shadowSize>
+      <anticipationSound>DropPod_Fall</anticipationSound>
+      <anticipationSoundTicks>100</anticipationSoundTicks>
+      <impactSound>DropPod_Impact</impactSound>
+      <motesPerCell>0</motesPerCell>
+      <ticksToImpactRange>200~250</ticksToImpactRange>
+      <minimalRoofDestruction>true</minimalRoofDestruction>
+      <!-- Force vertical-only movement: angleCurve at -90 = straight down -->
+      <angleCurve>
+        <points>
+          <li>(0,-90)</li>
+          <li>(1,-90)</li>
+        </points>
+      </angleCurve>
+      <!-- No rotation = stays upright -->
+      <rotationCurve>
+        <points>
+          <li>(0,0)</li>
+          <li>(1,0)</li>
+        </points>
+      </rotationCurve>
+      <zPositionCurve>
+        <points>
+          <li>(0.95,2.5)</li>
+          <li>(1,0)</li>
+        </points>
+      </zPositionCurve>
+      <speedCurve>
+        <points>
+          <li>(0.6,0.6)</li>
+          <li>(0.95,0.1)</li>
+        </points>
+      </speedCurve>
+      <!-- Match original drop pod explosion for visual effect -->
+      <explosionRadius>2</explosionRadius>
+      <explosionDamage>Bomb</explosionDamage>
+      <explosionDamageFactor>0.5</explosionDamageFactor>
+      <!-- NO spawnThing = PassengerShuttleIncoming handles building spawn -->
+    </skyfaller>
+    <comps>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- Takeoff Skyfaller (Vertical-Only Movement) -->
+  <!-- Uses PassengerShuttleLeaving thingClass for correct shuttle content handling -->
+  <!-- Uses SkyfallerBase parent + no curves for vertical-only movement -->
+  <ThingDef ParentName="SkyfallerBase">
+    <defName>BEWH_DropPodShuttleLeaving</defName>
+    <label>drop pod shuttle (leaving)</label>
+    <thingClass>PassengerShuttleLeaving</thingClass>
+    <rotatable>true</rotatable>
+    <size>(3, 3)</size>
+    <graphicData>
+      <texPath>Things/Building/DropPod/BEWH_DropPod_Closed</texPath>
+      <maskPath>Things/Building/DropPod/BEWH_DropPod_Closed_m</maskPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(6, 6)</drawSize>
+    </graphicData>
+    <skyfaller>
+      <reversed>true</reversed>
+      <movementType>Decelerate</movementType>
+      <shadow>Things/Skyfaller/SkyfallerShadowDropPod</shadow>
+      <shadowSize>(3, 3)</shadowSize>
+      <anticipationSound>DropPod_Leaving</anticipationSound>
+      <anticipationSoundTicks>-10</anticipationSoundTicks>
+      <ticksToImpactRange>-40~-15</ticksToImpactRange>
+      <moteSpawnTime>0.05</moteSpawnTime>
+      <motesPerCell>0</motesPerCell>
+      <!-- Force vertical-only movement: angleCurve at 90 = straight up -->
+      <angleCurve>
+        <points>
+          <li>(0,90)</li>
+          <li>(1,90)</li>
+        </points>
+      </angleCurve>
+      <!-- No rotation = stays upright -->
+      <rotationCurve>
+        <points>
+          <li>(0,0)</li>
+          <li>(1,0)</li>
+        </points>
+      </rotationCurve>
+      <zPositionCurve>
+        <points>
+          <li>(0,0)</li>
+          <li>(0.1,2)</li>
+        </points>
+      </zPositionCurve>
+      <speedCurve>
+        <points>
+          <li>(0,0.2)</li>
+          <li>(0.4,0.7)</li>
+        </points>
+      </speedCurve>
+    </skyfaller>
+    <comps>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>
+

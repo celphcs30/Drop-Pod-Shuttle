@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <TransportShipDef>
+    <defName>Ship_BEWH_DropPodShuttle</defName>
+    <label>Drop Pod Shuttle</label>
+    <shipThing>BEWH_DropPodShuttle</shipThing>
+    <arrivingSkyfaller>BEWH_DropPodShuttleIncoming</arrivingSkyfaller>
+    <leavingSkyfaller>BEWH_DropPodShuttleLeaving</leavingSkyfaller>
+    <worldObject>BEWH_DropPodShuttle</worldObject>
+    <playerShuttle>true</playerShuttle>
+  </TransportShipDef>
+
+  <WorldObjectDef ParentName="ShuttleWorldObjectBase">
+    <defName>BEWH_DropPodShuttle</defName>
+    <label>Drop Pod Shuttle</label>
+    <description>A drop pod shuttle in flight.</description>
+    <expandingIconTexture>Things/Building/DropPod/BEWH_DropPodIcon</expandingIconTexture>
+    <expandingIconDrawSize>1</expandingIconDrawSize>
+  </WorldObjectDef>
+
+</Defs>
+
